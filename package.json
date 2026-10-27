@@ -1,0 +1,36 @@
+{
+  "name": "dsh-boss-whale",
+  "version": "0.6.0",
+  "description": "虚拟人式求职助手：每天到点开一个真浏览器，像人一样浏览 BOSS 直聘（滚动/停留/偶尔点开一个岗位），把岗位整理成日报投进 DSH 会话。撞到人机验证就停手交给人。可选自动沟通：每天最多 2 条招呼，简历/面试/薪资一律交回本人。设置页「求职」。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "boss",
+    "zhipin",
+    "job"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}

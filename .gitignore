@@ -1,0 +1,28 @@
+# 依赖
+node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# 本地数据（绝对不要提交：里面有真实登录态）
+.boss-ai/
+*.credentials.json
+credentials.json
+browser-profile/
+boss-session.json
+boss-whale-log.jsonl
+jobs.jsonl
+seen.json
+greet.json
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# 打包产物
+*.tgz
+*.zip
+dist/
